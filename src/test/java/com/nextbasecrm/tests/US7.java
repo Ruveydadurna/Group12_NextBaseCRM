@@ -33,7 +33,7 @@ public class US7 {
         // * 2- write username
         WebElement userName = driver.findElement(By.xpath("(//input[@class='login-inp'])[1]"));
 
-        userName.sendKeys(ConfigurationReader.getProperty("username9"));
+        userName.sendKeys(ConfigurationReader.getProperty("username5"));
         //userName.sendKeys(ConfigurationReader.getProperty("username" + user_id));
         //System.out.println(ConfigurationReader.getProperty("username" + user_id));
         // System.out.println("1"+user_id);
@@ -56,7 +56,7 @@ public class US7 {
 
         //Enter the title in the text box "Java Programming"
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
-        driver.findElement(By.xpath("//body[@contenteditable='true']")).sendKeys("Java Programming  -?...?!");
+        driver.findElement(By.xpath("//body[@contenteditable='true']")).sendKeys("Java Programming  -?....?!");
         driver.switchTo().parentFrame();
 
         //Enter the question "Please select which programming language you are most comfortable with?"
